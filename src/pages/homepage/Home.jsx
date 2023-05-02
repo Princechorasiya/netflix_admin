@@ -38,7 +38,7 @@ const Home = () => {
     const getStats = async () => {
       setUserStats([]);
 			try {
-				const res = await axios.get("/users/stats", {
+				const res = await axios.get("/api/users/stats", {
 					headers: {
 						token:
 							"bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY0MjdhYTUwNmVhMmIyYjI1ZGEyMTVlZSIsImlzQWRtaW4iOnRydWUsImlhdCI6MTY4MTU3NDUwNSwiZXhwIjoxNjkwMjE0NTA1fQ.tIbjrEtSqwvaxZhErVMOeHWSyZuFZ0ZXEMnSyefCjU0",
