@@ -9,7 +9,7 @@ const WidgetSm = () => {
   useEffect(() => {
     const getNewUsers = async () => {
       try {
-        const res = await axios.get("/users?new=true",
+        const res = await axios.get("/api/users?new=true",
           {
             headers: {
               token:
